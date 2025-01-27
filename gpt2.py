@@ -19,10 +19,10 @@ def load_gpt2():
 # Generate response
 def response_gpt2(model, tokenizer, input, ilength, itemperature, itop_p, logger):
     """Function that generates response, saves loggings and the conversation in the history and verify if the input and the response generation are correct"""
-    st.session_state["conversation"].append({"user": input})
-    logger.info(f"Usuario: {input}")
-    inputs = tokenizer.encode(input, return_tensors="pt")
     if input:
+        st.session_state["conversation"].append({"user": input})
+        logger.info(f"Usuario: {input}")
+        inputs = tokenizer.encode(input, return_tensors="pt")
         try:
             start_time = time.time()
             outputs = model.generate(
@@ -48,4 +48,4 @@ def response_gpt2(model, tokenizer, input, ilength, itemperature, itop_p, logger
         except Exception as e:
             return f"Error al generar la respuesta: {e}"
     else:
-        st.warning("Por favor, escribe una consulta antes de continuar.")
+        st.warning("Please, write something before continuing.")
