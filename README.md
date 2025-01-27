@@ -38,13 +38,13 @@ Developed in anaconda virtual environment. List of dependencies:
 
    git clone https://github.com/steveohyeah/Chatbot-GPT2.git
    
-   cd <repository-name>
+   cd ""repository-name""
    
 2. **Create a virtual environment**:
    
-   conda create -n <name_env> python=3.11.8
+   conda create -n ""name_env"" python=3.11.8
    
-   conda activate <name_env>
+   conda activate ""name_env""
    
 3. **Install dependencies**:
    
