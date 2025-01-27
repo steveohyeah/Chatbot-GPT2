@@ -17,9 +17,8 @@ This project implements a text completion system using a pre-trained GPT-2 model
 
 Click on the following link to use the application:
 👉 [Open the application in Streamlit](https://chatbot-gpt2-test.streamlit.app/)
-
 Visit the application to generate text completions. Enter a prompt, and the GPT-2 model will complete your text based on the provided input and parameters.
----
+
 
 ## **Installing Instructions**
 
